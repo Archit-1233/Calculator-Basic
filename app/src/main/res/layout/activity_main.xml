@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#f6feff"
+
+   >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/inputtext"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text=""
+        android:elevation="7dp"
+        android:textSize="40dp"
+
+        android:gravity="end|bottom|center"
+        android:textColor="@color/black"
+        >
+
+    </TextView>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:backgroundTint="#f6feff"
+        >
+        <TextView
+
+            android:id="@+id/outputtext"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:text=""
+            android:elevation="7dp"
+           android:fontFamily="sans-serif-medium"
+            android:textSize="60dp"
+            android:gravity="end"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="#f6feff"
+
+
+
+                        >
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+         android:backgroundTint="#FBB917"
+
+                android:background="@drawable/calculatorbackground"
+                android:elevation="7dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="AC"
+               android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/rem"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:text="%"
+                android:backgroundTint="#FBB917"
+                android:layout_weight="1"
+                android:elevation="7dp"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:text="*"
+                android:backgroundTint="#FBB917"
+                android:id="@+id/Multiply"
+                android:elevation="7dp"
+                android:textSize="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorbackground"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Divide"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FBB917"
+                android:background="@drawable/calculatorbackground"
+                android:elevation="7dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="/"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:text="7"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:backgroundTint="#f6feff"
+                android:elevation="7dp"
+                android:id="@+id/num7"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="8"
+                android:id="@+id/num8"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:backgroundTint="#f6feff"
+                android:elevation="7dp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="9"
+                android:id="@+id/num9"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:backgroundTint="#f6feff"
+                android:elevation="7dp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorbackground"
+
+                android:backgroundTint="#FBB917"
+                android:elevation="7dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="x"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="4"
+                android:backgroundTint="#f6feff"
+                android:id="@+id/num4"
+                android:layout_margin="10dp"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:elevation="7dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:backgroundTint="#f6feff"
+                android:id="@+id/num5"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:elevation="7dp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="6"
+                android:backgroundTint="#f6feff"
+                android:layout_margin="10dp"
+                android:textSize="40dp"
+                android:elevation="7dp"
+                android:id="@+id/num6"
+                android:background="@drawable/calculatorbackground"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Minus"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/calculatorbackground"
+                android:elevation="7dp"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="-"
+                android:backgroundTint="#FBB917"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:id="@+id/num1"
+                android:elevation="7dp"
+                android:backgroundTint="#f6feff"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="2"
+                android:layout_margin="10dp"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:id="@+id/num2"
+                android:elevation="7dp"
+                android:backgroundTint="#f6feff"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/num3"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorbackground"
+                android:elevation="7dp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="3"
+                android:backgroundTint="#f6feff"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="+"
+                android:layout_margin="10dp"
+
+                android:id="@+id/Add"
+                android:layout_weight="1"
+                android:elevation="7dp"
+                android:backgroundTint="#FBB917"
+                android:background="@drawable/calculatorbackground"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/num00"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorbackground"
+                android:elevation="7dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="00"
+                android:backgroundTint="#f6feff"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:text="0"
+                android:id="@+id/num0"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorbackground"
+                android:textSize="40dp"
+                android:elevation="7dp"
+                android:backgroundTint="#f6feff"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:gravity="center"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/dot"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorbackground"
+                android:elevation="7dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="."
+                android:backgroundTint="#f6feff"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/equal"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/calculatorbackground"
+                android:elevation="7dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="="
+                android:layout_margin="10dp"
+                android:backgroundTint="#90EE90"
+                android:textColor="@color/black"
+                android:textSize="40dp">
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
